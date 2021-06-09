@@ -1,0 +1,683 @@
+body{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; 
+  /*height: 100vh;   */
+    box-sizing: border-box;
+}
+body *{
+    box-sizing: border-box;
+}
+
+
+html{
+  margin: 0;
+  padding: 0;  
+}
+.wrapper{
+    /*min-height: 100%;*/
+    position: relative;
+    padding-top: 80px;
+    background-color: #EFF4FF;
+}
+.wrapper .headerBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 272px;
+    background: linear-gradient(91.39deg, #4568DC -2.02%, #00B4DB 118.83%);
+}
+
+.sidebar{
+    width: 342px;
+    position: relative;
+    padding-bottom: 180px;
+}
+.sidebar ul{
+    margin-top: 0;
+    padding-left: 0;
+    padding-top: 28px;
+}
+
+.sidebar ul li .icon{
+    position: absolute;    
+    display: block;
+    width: 24px;
+    text-align: center;   
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.sidebar ul li a{
+    position: relative;
+    padding-left: 30px;
+    display: block;
+    color: #878787;
+    text-decoration: none;
+}
+
+
+
+.menu li{
+    position: relative;
+  list-style-type: none;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #878787;
+  padding-left: 52px;
+  margin-bottom: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+}
+.menu li.active{
+    background: linear-gradient(91.39deg, #4568DC -2.02%, #00B4DB 118.83%);
+    box-shadow: 0px 4px 10px rgba(41, 122, 179, 0.3);
+    color: #fff;
+}
+.menu li.active a{
+    color: #fff;
+}
+
+.menu .activeLiBorder{
+    position: absolute;
+    border: 1px solid #fff;
+    height: 100%;
+    top: 0;
+    left: 30px;
+}
+
+
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.rightList{
+    margin-right: 46.72px;
+    float: right;
+}
+
+.rightList img{
+    width: 22px;
+    height: 27px;
+}
+
+.rightList ul{
+    margin-top: 0;
+}
+
+.rightList ul li{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 23.64px;
+    border-right: 2px solid #56E86D ;
+    padding-right: 26.89px;
+}
+
+.rightList ul li:last-child{
+    border-right: 0;
+}
+
+
+.companyLogo{
+    margin-left: 55px;
+    padding-top: 30px;
+}
+
+.companyLogo img{
+    vertical-align: middle;
+}
+
+.activeBorder{
+    border: 2px solid #56E86D ;
+    border-radius:5px;
+}
+
+.activeTitle{
+    padding-left: 25px;
+}
+
+.activePageTitle{
+ margin-left: 108px;
+ font-family: Work Sans;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 24px;
+ line-height: 28px;
+ text-transform: capitalize;   
+ color: #fff;
+ border-radius: 5px;
+}
+
+.ellipselogo{
+  margin-left: 40px;    
+  padding-bottom: 60px;
+  margin-top: 80px;
+  
+}
+.ellipselogo>img{
+    float: left;
+}
+.ellipselogo:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.authorInfo{
+    float: left;
+}
+.authorName{
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-transform: capitalize;
+margin-left:10px ;
+color: #FFFFFF;
+}
+
+.authorPosition{
+ font-family: Work Sans;
+ font-style: normal;
+ font-weight: 300;
+ font-size: 16px;
+ line-height: 19px;
+ text-transform: capitalize;
+ color: #E5E5E5;  
+ display: block;
+ margin-top: 15px;
+ margin-left: 10px;
+}
+
+.vectorPng img{
+  margin-left: 35px;
+}
+
+.vectorPng img{
+    transform: rotate(0deg);
+}
+
+.contentWrapper{
+    position: relative;
+    width:100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    /*height: calc(100% - 279px);*/
+    /*background: #EFF4FF;*/
+}
+
+.content{
+    padding-right: 28px;
+    flex: auto;
+    /*position: absolute;
+    right: 28px;
+    bottom: 0;
+    top: -189px;
+    left: 342px;
+    overflow: hidden;*/
+    /* background: #fff; */
+    /*height: 100%;*/
+
+}
+.content .content_inner{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-top: 1px;
+    position: relative;
+}
+
+.home .contentText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.welcomeText{
+ font-family: Work Sans;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 50px;
+ line-height: 59px;
+ margin-top: 0;
+} 
+
+.nameText{
+ font-family: Work Sans;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 50px;
+ line-height: 59px;  
+ 
+}
+
+.borderBottom{
+    max-width: 422px;
+    border: 4px solid #1976D2;
+    margin: 0 auto;
+}
+
+.home .contentText img{
+  margin-top: 53.11px;
+    max-width: 100%;
+}
+
+.logOutButtonView{
+ background: #37A0EA;
+ border-radius: 15px;
+ font-family: Work Sans;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 19px;
+ color: #FFFFFF;
+}
+
+.buttonLeftVectorBlock{
+    position: relative;
+    line-height: 80%;
+}
+.buttonLeftVectorBlock:after{
+    position: absolute;
+    width: 27px;
+    height: 0px;
+    left: 30px;
+    top: 50%;
+
+    border: 1px solid #FFFFFF;
+    transform: translateY(-50%) rotate(90deg);
+    content: "";
+}
+.logOutButton{
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    left: 0;
+}
+.logOutButtonView{
+    padding:19px 20px 19px 16px; 
+    margin-left: 15px;
+}
+
+.logOutButtonView span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logOutButtonText{
+    margin-right: 120px;
+    margin-left: 50px;
+
+}
+
+.container{
+     /*max-width: 1506px;*/
+     /*margin: 0 auto;*/
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 30px;
+}
+
+.contentTable{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.contentHeader{
+    background-color: #EFF4FF;
+    padding-top: 28px ;
+    padding-bottom:27px ;
+    margin-top: 20px;
+}
+
+.selectOptions select{
+    padding: 10px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    max-width: 250px;
+    width: 100%;
+    border:0;
+    margin-right: 20px;
+    vertical-align: middle;
+    outline: none;
+}
+
+.selectOptions{
+    padding-left: 20px;
+    padding-right: 25px;
+}
+.selectOptions:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.selectOptions .button1{
+    width: 52px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #37A0EA;box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.selectOptions .button2{
+    float: right;
+    padding: 10px 24px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #37A0EA;box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.tableHeader{
+    background: #37A0EA;
+    border-radius: 5px 5px 0px 0px;
+    padding-left: 25px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+}
+.tableHeader:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.tableHeader img{
+    vertical-align: middle;
+}
+
+.document2Text{
+    margin-left: 15px;
+    display: inline-block;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border-right: 1px solid #FFFFFF ;
+    padding-right: 15px;
+    vertical-align: middle;
+}
+
+.document2Text2{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.document2Text3{
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-right: 20px;
+}
+.document2Text3 button {
+    
+    
+    color:#37A0EA ;
+    border: 0;
+}
+
+.quanityButton1{
+    margin-left: 32px;
+    background-color: #FFFFFF;
+
+}
+
+.quanityButton4{
+    margin-right: 25px;
+}
+
+.document2Text3 input{
+    max-width: 35px;
+}
+
+.tableStyle{
+    width: 100%;
+}
+
+.tableStyle {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    padding-bottom: 10px;
+}
+
+.tableStyle th{
+    padding-left: 8px;
+    width: 22%;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+
+}
+.tableStyle td{
+    
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EAEDF6; 
+    
+}
+
+.tableStyle .firstTh{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.tableStyle .firstTd{
+    text-align: left;
+    padding-left: 20px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #575A63;
+}
+
+.tableStyle .secondTd{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #575A63;
+    
+    padding-left: 10px;
+}
+
+.tableStyle .img1{
+    vertical-align: middle;
+}
+
+.tableStyle span{
+    vertical-align: middle;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #575A63;
+}
+
+.tableStyle tr td:nth-child(2){
+    padding-left:8px ;
+} 
+
+.tableStyle tr th:nth-child(4){
+    text-align: center;
+} 
+
+.tableStyle tr td:nth-child(4){
+    text-align: center;
+} 
+
+.tableStyle td .activeButton{
+    border: 0;
+    border-radius: 20px;
+    background-color:#27AE60;
+    color: #FFFFFF;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px 24px;
+}
+
+.tableStyle td .deactiveButton{
+    border: 0;
+    border-radius: 20px;
+    background-color:#BDBDBD;;
+    color: #FFFFFF;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px 16px;
+}
+
+.tableStyle tr th:nth-child(5){
+    text-align: center;
+} 
+
+.tableStyle tr td:nth-child(5){
+    text-align: center;
+}
+.dashboardLogo{
+    display: inline-block;
+}
+
+@media screen and (max-width: 1240px) {
+    .selectOptions select{
+        max-width: 200px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .contentWrapper{
+        display: block;
+        min-height: 0;
+    }
+    .home .contentText{
+        position: static;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .content{
+        flex: none;
+        padding-left: 28px;
+    }
+    .sidebar{
+        width: 100%;
+        padding-bottom: 130px;
+    }
+    .logOutButton{
+        text-align: right;
+        padding-right: 28px;
+        bottom: 50px;
+    }
+    .content .content_inner{
+        padding: 20px 20px;
+    }
+    .welcomeText{
+        font-size: 36px;
+    }
+    .nameText{
+        font-size: 36px;
+    }
+    .borderBottom {
+        max-width: 272px;
+    }
+}
+@media screen and (max-width: 989px) {
+    .activePageTitle{
+        display: none;
+    }
+    .selectOptions select{
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .document2Text3{
+        float: none;
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .dashboardLogo{
+        display: inline-block;
+        width: 33px;
+        overflow: hidden;
+    }
+    .rightList ul li{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .rightList ul li:last-child{
+        padding-right: 0;
+    }
+    .tableStyle{
+        display: block;
+    }
+    .tableStyle tbody{
+        display: block;
+    }
+    .tableStyle tr{
+        display: block;
+    }
+    .tableStyle tr th,
+    .tableStyle tr td{
+        display: block;
+        width: 100%;
+        text-align: center !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .tableStyle tr:nth-child(2n+2){
+        background-color: #EFF4FF;
+    }
+}
+@media screen and (max-width: 480px) {
+    .logOutButtonText{
+        margin-right: 20px;
+    }
+}
